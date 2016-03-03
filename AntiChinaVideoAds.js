@@ -48,15 +48,15 @@ AntiChinaVideoAds.prototype = {
         },
 		'letv': {
             'player': 'chrome://AntiChinaVideoAds/content/swf/letv.swf',
-            're': /http:\/\/.*letv[\w]*\.com\/(hz|.*?\/((?!(Live|seed|Disk))(S(?!SDK)[\w]{2,3})?(?!Live)[\w]{4}|swf))Player\.swf/i
+            're': /http:\/\/.*letv[\w]*\.com\/(hz|.*\/((?!(Live|seed|Disk))(SDK)?(?!Live)[\w]{4}|swf))Player*\.swf/i
 	    },
         'letv_live': {
             'player': 'chrome://AntiChinaVideoAds/content/swf/letvlive.swf',
             're': /http:\/\/.*letv[\w]*\.com\/p\/\d+\/\d+\/\d+\/newplayer\/LivePlayer\.swf/i
         },
-        'letvskin': {
-            'player': 'http://player.letvcdn.com/p/201407/24/15/newplayer/1/SSLetvPlayer.swf',
-            're': /http:\/\/.*letv[\w]*\.com\/[\w]*p\/\d+\/\d+\/\d*\/\d+\/\d+\/newplayer\/\d+\/S?SLetvPlayer\.swf/i
+        'letvpccs': {
+            'player': 'http://www.le.com/cmsdata/playerapi/pccs_sdk_20141113.xml',
+            're': /http:\/\/www\.le(tv)?\.com\/.*\/playerapi\/pccs_(?!(.*live|sdk)).*_?(\d+)\.xml/i
         },
         'pptv': {
             'player': 'chrome://AntiChinaVideoAds/content/swf/pptv.swf',
