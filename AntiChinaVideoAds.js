@@ -385,7 +385,7 @@ TrackingListener.prototype = {
 };
 
 function HttpHeaderVisitor() {
-    this._isFlash = false;
+    this._isFlash = true;
 }
 HttpHeaderVisitor.prototype = {
     visitHeader: function(aHeader, aValue) {
